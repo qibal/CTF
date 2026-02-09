@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Cyber Threat Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i> CYBER MAP <span style="font-size:0.6em; color:#58a6ff">LIVE MONITOR</span>
+        </div>
+        <div class="active-nodes">
+            <i class="fas fa-satellite-dish"></i> 5 ACTIVE NODES
+        </div>
+        <div class="time" id="clock">00:00:00</div>
+    </nav>
+
+    <div class="stats-container">
+        <div class="stat-row">
+            <span>Global Network Load</span>
+            <div class="progress-bar">
+                <div class="fill" style="width: 88%; background: #00ff00; box-shadow: 0 0 10px #00ff00;"></div>
+            </div>
+            <span class="val">88%</span>
+        </div>
+        <div class="stat-row">
+            <span>Attack Traffic</span>
+            <div class="progress-bar">
+                <div class="fill" style="width: 59%; background: #f1c40f; box-shadow: 0 0 10px #f1c40f;"></div>
+            </div>
+            <span class="val">59%</span>
+        </div>
+    </div>
+
+    <div id="map-container">
+        <div id="map"></div>
+        <div id="attack-log" class="attack-overlay">
+            <h4><i class="fas fa-terminal"></i> LIVE LOGS</h4>
+            <div id="log-content">Waiting for traffic...</div>
+        </div>
+    </div>
+
+    <div class="team-section">
+        <h2><i class="fas fa-users"></i> ACTIVE CYBER TEAMS</h2>
+        <div id="team-grid" class="grid-container">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
