@@ -16,18 +16,20 @@ The application is built as a frontend-only solution using ES6 Modules and Leafl
 
 ## Tech Stack
 
-- **HTML5**: Markup structure.
-- **CSS3**: Styling, grid layouts, and CSS animations for attack lines.
-- **JavaScript (ES6)**: Logic for map rendering, data mocking, and simulation loops.
-- **Leaflet.js**: Open-source JavaScript library for mobile-friendly interactive maps.
-- **CartoDB**: Map tiles provider (Dark Matter theme).
+- HTML5
+- CSS3
+- JavaScript (ES6 Modules)
+- Leaflet.js
+- CartoDB (Map Tiles)
 
 ## Project Structure
 
+```text
 project-folder/
-├── index.html # Main entry point
+├── index.html          # Main entry point
 ├── css/
-│ └── style.css # Global styles and animations
+│   └── style.css       # Global styles and animations
 └── js/
-├── main.js # Map initialization and simulation logic
-└── data.js # JSON-formatted dummy data for teams
+    ├── main.js         # Map initialization and simulation logic
+    └── data.js         # JSON-formatted dummy data for teams
+```
